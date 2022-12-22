@@ -40,8 +40,8 @@ a:hover{
 
 
 .imagen{
-width: 180px;
-height: 43px;
+width: 150px;
+height: 35px;
 
 }
 
@@ -49,4 +49,10 @@ height: 43px;
 .center{
   text-align: center;
   
+  }
+
+
+  .negra{
+    color: black;
+    font-weight: bold;
   }
