@@ -67,7 +67,7 @@ function App()
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggle3 = () => setIsOpen(!isOpen);
+ 
 
   const [open, setOpen] = useState('1');
   const toggle2 = (id) => {
