@@ -152,24 +152,23 @@ function App()
       
     </Nav>
 
-          <>
-      
+           
         <Breadcrumb>
           <BreadcrumbItem>
-            <a href="#">
+            <NavLink href="#">
               Home
-            </a>
+            </NavLink>
           </BreadcrumbItem>
           <BreadcrumbItem>
-            <a href="#">
+            <NavLink href="#">
               Library
-            </a>
+            </NavLink>
           </BreadcrumbItem>
           <BreadcrumbItem >
             Data
           </BreadcrumbItem>
         </Breadcrumb>
-      </>
+     
 
 
     <Carousel
@@ -251,7 +250,7 @@ function App()
     
     
       
-    );
+   );
 }
 
 export default App;
