@@ -65,8 +65,7 @@ function App()
 {
 
 
-  const [isOpen, setIsOpen] = useState(false);
-
+  
  
 
   const [open, setOpen] = useState('1');
