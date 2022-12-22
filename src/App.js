@@ -64,6 +64,11 @@ const items = [
 function App() 
 {
 
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle3 = () => setIsOpen(!isOpen);
+
   const [open, setOpen] = useState('1');
   const toggle2 = (id) => {
     if (open === id) {
@@ -115,25 +120,24 @@ function App()
 
     return (
 
-      <div className="card--body">
-        <Nav  tabs>
-
-        </Nav>
-
-
-      <Nav tabs className='center'>
-
-        <NavItem>
-          <img  className='imagen' src={logo} alt="No"></img>
-        </NavItem>
+      <div >
+        
+          
        
 
-      <NavItem>
+      <div className="p-2 card--body">
+      <img  className='imagen' src={logo} alt="No"></img>
+      </div>
+      <Nav tabs className="d-flex justify-content-center card--body">
+
+      
+
+      <NavItem className="p-2">
         <NavLink className="letra"  href="#" >
           MES
         </NavLink>
-      </NavItem>
-      <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
+      </NavItem >
+      <Dropdown nav isOpen={dropdownOpen} toggle={toggle} className="p-2">
         <DropdownToggle className="letra" nav caret active>
           Estaciones
         </DropdownToggle>
@@ -143,32 +147,32 @@ function App()
 
         </DropdownMenu>
       </Dropdown>
-      <NavItem>
+      <NavItem className="p-2">
         <NavLink className="card--body" href="#">Que es?</NavLink>
       </NavItem>
-      <NavItem>
+      <NavItem className="p-2">
         <NavLink className="card--body" href="#">Integrantes en B44</NavLink>
       </NavItem>
       
     </Nav>
 
-           
+        <>
         <Breadcrumb>
           <BreadcrumbItem>
-            <NavLink href="#">
+            <Nav href="#">
               Home
-            </NavLink>
+            </Nav>
           </BreadcrumbItem>
           <BreadcrumbItem>
-            <NavLink href="#">
+            <Nav href="#">
               Library
-            </NavLink>
+            </Nav>
           </BreadcrumbItem>
           <BreadcrumbItem >
             Data
           </BreadcrumbItem>
         </Breadcrumb>
-     
+        </>
 
 
     <Carousel
