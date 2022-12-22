@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -10,7 +10,6 @@ import React, { useState } from 'react';
 
 function App() {
 
-  const [count, setCount] = useState(0);
   const [open, setOpen] = useState(true);
 
   return (
