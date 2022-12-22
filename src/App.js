@@ -37,7 +37,7 @@ function App()
       <Nav tabs className='center'>
 
         <NavItem>
-          <img  className='imagen' src={logo}></img>
+          <img  className='imagen' src={logo} alt="No"></img>
         </NavItem>
        
 
